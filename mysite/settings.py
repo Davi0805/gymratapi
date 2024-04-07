@@ -83,11 +83,11 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ["PGDATABASE"],
-        'USER': os.environ["PGUSER"],
-        'PASSWORD': os.environ["PGPASSWORD"],
-        'HOST': os.environ["PGHOST"],
-        'PORT': os.environ["PGPORT"],
+        'NAME': 'postgres',
+        'USER': 'masteruser',
+        'PASSWORD': 'Davi200805',
+        'HOST': 'gymrat-database.c5s2o8usyegg.eu-north-1.rds.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
